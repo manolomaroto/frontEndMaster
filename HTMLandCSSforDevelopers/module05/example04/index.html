@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>
+    Listas con pseudoelementos</title>
+    <style>
+        #Lista{
+            list-style: none;
+        }
+        #Lista li:before{
+            content: "\2714";
+            margin-right: .5em;
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <ul id="Lista">
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+    </ul>   
+</body>
+</html>

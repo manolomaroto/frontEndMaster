@@ -1,0 +1,23 @@
+#TitPrincipal
+{
+    color:red;
+    margin-bottom: 19px;
+}
+
+.Azul {
+    color:blue;
+}
+.Subrayada {
+    text-decoration:underline;
+}
+.ExtraGrande {
+    font-size:4em;
+}
+
+.Subrayada.Azul {
+    font-weight:bold;
+}
+
+p + p {
+    text-indent:2em;
+}

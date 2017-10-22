@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Selectores de atributos</title>
+    <style type="text/css">
+        span {
+            display:block;
+        }
+
+        a[href^="mailto:"] {
+            background-image:url('email.png');
+            background-position-x:left;
+            background-position-y:center;
+            background-repeat:no-repeat;
+            padding-left:16px;
+        }
+
+        a[href$=".pdf"] {
+            background-image:url('pdf.gif');
+            background-position-x:left;
+            background-position-y:center;
+            background-repeat:no-repeat;
+            padding-left:16px;
+        }
+    </style>
+</head>
+<body>
+    <div id="contenedor">
+        <span class="azul">azul</span>
+        <span class="Azul">Azul</span>
+        <div class="azul grande">azul grande</div>
+        <br />
+        <a href="mailto:info@campusmvp.com">campusMVP</a><br />
+        <a href="documento.pdf">Documento PDF importante</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Selectores de atributos</title>
+    <style>
+        span{
+            display: block;
+        }
+        
+/*
+        div[id="contenedor"]{
+            color: red;
+        }
+*/
+/*
+        *[class~='azul']{
+            color: blue;
+        }
+*/
+        a[href^="mailto:"]{
+            background: green;
+        }
+        
+        a[href$="pdf"]{
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="contenedor">
+        <span class="azul">azul</span>
+        <span class="Azul">Azul</span>
+        <div class="azul grande">azul grande</div>
+        <br>
+        <a href="mailto:manuelgmaroto@gmail.com">Manolo</a>
+        <a href="documento.pdf">Documento PDF</a>
+    </div>
+</body>
+</html>

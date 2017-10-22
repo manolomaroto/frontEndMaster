@@ -1,0 +1,84 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Contadores CSS</title>
+	<style type="text/css">
+		#Contenido {
+			counter-reset: epigrafes subepigrafes;
+		}
+		
+		h1 {
+			counter-reset: subepigrafes;
+			counter-increment:epigrafes;
+		}
+		
+		h1:before {
+			content: "Epígrafe " counter(epigrafes) ".- ";
+		}
+		
+		h2 {
+			counter-increment: subepigrafes;
+		}
+		
+		h2:before {
+			content: "Sub-epígrafe " counter(epigrafes) "." counter(subepigrafes) ".- ";
+		}
+		
+		ol {
+			counter-reset: listados;
+			list-style-type:none;
+		}
+		
+		li:before {
+			content: counters(listados,".", lower-roman) ".- ";
+			counter-increment: listados;
+		}
+	</style>
+</head>
+<body>
+	<div id="Contenido">
+		<h1>Introducción</h1>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, aspernatur, voluptatem sit quas ducimus odio cumque fugiat ab blanditiis excepturi doloribus quae nisi incidunt suscipit consectetur quia deserunt! Illo, labore.50
+		<h2>Los fundamentos</h2>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, sequi, quod reiciendis perspiciatis porro veritatis! Saepe, voluptatem, eos, ducimus, voluptatum sunt cumque soluta incidunt reprehenderit temporibus dolorem quaerat officia vitae quasi voluptate consequatur. Deserunt, quia, saepe, quos, provident tenetur dolorem fugit velit necessitatibus illum maiores pariatur est atque harum aut.
+		<h2>Más información sobre el tema</h2>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, ad, tenetur, voluptates autem ipsam earum illum nisi nostrum corrupti perferendis doloribus nesciunt repellendus labore quibusdam omnis! Non, ipsam, quas iure libero quis delectus assumenda mollitia illo provident odit sit optio obcaecati tenetur nostrum nobis maiores quae blanditiis veritatis id illum.
+		<h2>Más todavía</h2>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, ad, tenetur, voluptates autem ipsam earum illum nisi nostrum corrupti perferendis doloribus nesciunt repellendus labore quibusdam omnis! Non, ipsam, quas iure libero quis delectus assumenda mollitia illo provident odit sit optio obcaecati tenetur nostrum nobis maiores quae blanditiis veritatis id illum.
+		<h1>A fondo</h1>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, quis, sequi, aperiam illo nesciunt quisquam quo tenetur praesentium quod voluptate tempora quasi dicta fugiat accusamus illum itaque explicabo laudantium dolor eveniet qui inventore iure tempore nobis rem minus delectus architecto! Mollitia, iste tempore iusto omnis numquam laboriosam dicta totam excepturi.
+		<h2>Conceptos avanzados</h2>
+		<h2>Conceptos súper-avanzados</h2>
+		<ol>
+			<li>Elemento 1
+				<ol>
+					<li>Sub-Elemento 1</li>
+					<li>Sub-Elemento 2
+						<ol>
+							<li>Sub-Sub-Elemento 1</li>
+							<li>Sub-Sub-Elemento 2</li>
+						</ol>
+					</li>
+					<li>Sub-Elemento 3</li>
+				</ol>
+			</li>
+			<li>Elemento 2
+				<ol>
+					<li>Sub-Elemento 1</li>
+					<li>Sub-Elemento 2</li>
+				</ol>
+			</li>
+			<li>Elemento 3</li>
+			<li>Elemento 4
+				<ol>
+					<li>Sub-Elemento 1</li>
+					<li>Sub-Elemento 2</li>
+					<li>Sub-Elemento 3</li>
+				</ol>
+			</li>
+			<li>Elemento 5</li>
+		</ol>
+	</div>
+</body>
+</html>
