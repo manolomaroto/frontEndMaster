@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+#wrapper{
+    box-shadow: 0 0 12px rgba(0,0,0,0.8);
+    margin: 0 auto;
+    max-width: 1440px;
+    width: 100% !important;
+}
+
+section{
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 900px;
+    margin: 0 auto;
+    max-width: 1440px;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    width: 100% !important;
+}
+
+#bloque1{
+    
+    background-image: url(openphotonet_clips09.JPG);
+}
+
+#bloque2{
+    background-image: url(openphotonet_rainbow%20brolly3.JPG);
+}
+
+#bloque3{
+    background-image: url(openphotonet_stuck_on_converse.jpg)
+}
+
+#bloque4{
+    background-image: url(openphotonet_clips09.JPG);
+}
+
+h1{
+    background-color: #02223a;
+    bottom: 0;
+    color: rgba(255,255,255,0.9);
+    display: block;
+    font-size: 5em;
+    margin-top: 3em;
+    opacity: 0.76;
+    text-align: center;
+    text-shadow: 1px 1px 1px #666;
+    text-transform: uppercase;
+    width: 100%;
+}

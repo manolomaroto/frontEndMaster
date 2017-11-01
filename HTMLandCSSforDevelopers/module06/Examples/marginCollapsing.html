@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Colapsando los bordes</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        html,body{
+            width: 100%;
+            height: 100%;
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        #uno{
+            background-color: aqua;
+/*  Con un padding de 1px es suficiente para que los margenes superiores de los div no se toquen y la caja contenedora salga pegada arriba          padding: 1px;*/
+            padding: 1px;
+        }
+        
+        #dos{
+            background-color: blue;
+            padding: 20px;
+            margin: 30px;
+            height: 200px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div id="uno">
+        <div id="dos">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat ex, vitae aliquid tenetur delectus? Porro at officia nisi maxime quia deserunt natus quas dignissimos ipsum, cumque, enim quasi, ipsa officiis.
+        </div>
+    </div>
+</body>
+</html>
