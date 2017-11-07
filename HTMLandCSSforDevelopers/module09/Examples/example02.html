@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Maquetando con tablas</title>
+    <style>
+        .wrapper{
+            margin: 0 auto;
+            width: 800px;
+        }
+        table{
+            width: 100%;
+        }
+        .lateral{
+            width: 150px;
+        }
+        .contenido{
+            vertical-align: top;
+            padding: 20px;
+            height: 400px;
+        }
+        .pie{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+   <div class="wrapper">
+       <table>
+        <tr>
+            <td colspan="2" style="text-align: center">
+                <strong>CABECERA</strong>
+            </td>
+            
+        </tr>
+        <tr>
+            <td class="lateral" style="vertical-align: top;padding: 15px 0px 0px 10px">
+                MENU LATERAL
+            </td>
+            <td class="contenido">
+                Contenido
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" class="pie">
+                PIE
+            </td>
+            
+        </tr>
+    </table>
+   </div>
+    
+</body>
+</html>

@@ -1,0 +1,74 @@
+.wrapper{
+    width: 800px;
+    margin: 0 auto;
+}
+
+table{
+    font: 13px Arial;
+    border-collapse: collapse;
+    white-space: nowrap; /* Que no cambie de linea */
+}
+
+table caption{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+tr.cabecera{
+    background-color: #5b9bd5;
+    font-weight: bold;
+    color: white;
+    height: 2em;
+    vertical-align: middle;
+    text-align: left;
+    
+}
+
+tr.cabecera td{
+    padding-left: 1em;
+}
+
+tbody td, tfoot td{
+    text-align: right;
+}
+
+td{
+    border: 1px solid #5b9bd5;
+    padding: 0 1em;
+}
+
+tbody > tr > td:first-child{
+    font-weight: bold;
+    text-align: left;
+}
+
+tbody > tr > td > span{
+    font-weight: normal;
+    font-size: .9em;
+    color: silver;
+    display: block;
+}
+
+.stock{
+   color: green;
+}
+
+.noStock{
+    color: red;
+}
+
+tfoot{
+    color: silver;
+    font-weight: bold;
+}
+
+#total{
+    font-size: 1.1em;
+    font-weight: bold;
+    color: black
+}
+
+#total td:last-child{
+    color: orange;
+    font-size: 1.3em;
+}

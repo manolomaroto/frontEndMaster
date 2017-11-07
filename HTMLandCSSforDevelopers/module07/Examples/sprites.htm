@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Uso de Sprites</title>
+	<style type="text/css">
+		#menu {
+			margin: 0 auto;
+		}
+		
+		#menu li {
+			width:103px;
+			height:38px;
+			background-image: url('Images/applenav.png');
+			float:left;
+			
+			overflow: hidden;
+			cursor:pointer;
+		}
+		#menu a {
+			text-indent: -9999px;
+			display:block;
+		}
+		
+	/* ELEMENTOS DE MENÚ */
+	
+		#menu li#tienda {
+			background-position: -103px 0px;
+		}
+		#menu li#mac {
+			background-position: -206px 0px;
+		}
+		#menu li#ipod {
+			background-position: -309px 0px;
+		}
+		#menu li#iphone {
+			background-position: -412px 0px;
+		}
+		#menu li#ipad {
+			background-position: -515px 0px;
+		}
+		#menu li#itunes {
+			background-position: -618px 0px;
+		}
+		#menu li#soporte {
+			background-position: -721px 0px;
+		}
+		#menu li#buscar {
+			background-position: -824px 0px;
+		}
+
+		/* pseudo-elementos */
+		
+		#menu li#inicio:hover {
+			background-position: 0px -76px;
+		}
+		#menu li#tienda:hover {
+			background-position: -103px -114px;
+		}
+		#menu li#mac:hover {
+			background-position: -206px -114px;
+		}
+		#menu li#ipod:hover {
+			background-position: -309px -114px;
+		}
+		#menu li#iphone:hover {
+			background-position: -412px -114px;
+		}
+		#menu li#ipad:hover {
+			background-position: -515px -114px;
+		}
+		#menu li#itunes:hover {
+			background-position: -618px -114px;
+		}
+		#menu li#soporte:hover {
+			background-position: -721px -114px;
+		}
+		
+	</style>
+</head>
+<body>
+	<div id="menu">
+		<ul>
+			<li id="inicio"><a href="#">Inicio</a></li>
+			<li id="tienda"><a href="#Tienda">Tienda</a></li>
+			<li id="mac"><a href="#Mac">Mac</a></li>
+			<li id="ipod"><a href="#iPod">iPod</a></li>
+			<li id="iphone"><a href="#iPhone">iPhone</a></li>
+			<li id="ipad"><a href="#iPad">iPad</a></li>
+			<li id="itunes"><a href="#iTunes">iTunes</a></li>
+			<li id="soporte"><a href="#Soporte">Soporte</a></li>
+			<li id="buscar"></li>
+		</ul>
+	</div>
+	
+</body>
+</html>

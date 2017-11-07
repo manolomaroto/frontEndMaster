@@ -1,0 +1,3 @@
+Estas son las imágenes del segundo menú de Apple que se muestra al final del vídeo de los sprites, por si quieres intentar crear el menú por tu cuenta, ya que Apple hace tiempo que cambió el menú de nuevo (las webs cambian constantemente).
+
+Para el texto Apple usaba el formato SVG, que es un formato gráfico vectorial para la web. No deberías tener problema para usar este formato pero por si acaso he dejado el mismo gráfico en formato PNG por si te resulta más fácil.

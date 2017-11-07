@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .wrapper{
+            width: 800px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <main class="wrapper">
+        <h1>Tabla uno</h1>
+        <p>table>caption+(tr>th[scope="col"]*2)+(tr*2>td*2)</p>
+        <section>
+            <table>
+                <caption>Lista de empleados</caption>
+                <tr>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Email</th>
+                </tr>
+                <tr>
+                    <td>Pepe</td>
+                    <td>pepe@pepe.es</td>
+                </tr>
+                <tr>
+                    <td>Juan</td>
+                    <td>juan@juan</td>
+                </tr>
+            </table>
+        </section>
+        <h1>Tabla2, con etiquetas de agrupamiento de cabecera, pie y cuerpo</h1>
+        <p>table>(thead>tr>th[scope="col"]{Cabecera $}*2)+(tbody>tr>td{Dato}*2)+(tfoot>tr>td{Pie$}*2)</p>
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col">Cabecera 1</th>
+                    <th scope="col">Cabecera 2</th>
+                </tr>
+            </thead>
+            <tbody>
+                <td>Dato</td>
+                <td>Dato</td>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Pie1</td>
+                    <td>Pie2</td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+</body>
+</html>

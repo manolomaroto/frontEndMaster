@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 05</title>
+    <style>
+        .wrapper{
+            margin: 0 auto;
+            width: 800px;
+        }
+        table{
+            width: 100%;
+            border-spacing: 0px;
+            font-size: .8em;
+        }
+        table caption{
+            font-size: 3em;
+            font-weight: bold;
+            text-align: left;
+            border-bottom: 3px solid black;
+        }
+        tr>th{
+            text-align: left;
+            font-weight: lighter;
+            vertical-align: bottom;
+        }
+        
+        th,td{
+            border-bottom: 1px solid silver;
+            height: 1.5em;
+        }
+        .ok:before{
+            content: url(ok.png);
+        }
+    
+    </style>
+</head>
+<body>
+    <main class="wrapper">
+        <table>
+            <caption>Lista de tareas</caption>
+            <tr>
+                <th>Tarea</th>
+                <th>Prioridad</th>
+                <th>Estado</th>
+                <th>Fecha</th>
+                <th>¿Hecha?</th>
+            </tr>
+            <tr>
+                <td>Hacer la compra</td>
+                <td>Normal</td>
+                <td>No comenzada</td>
+                <td>23/10/2001</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Llevar el coche a revision</td>
+                <td>Alta</td>
+                <td>Retrasada</td>
+                <td>02/05/2007</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Llevar los niños al parque</td>
+                <td>Normal</td>
+                <td>Finalizada</td>
+                <td>28/12/2014</td>
+                <td class="ok"></td>
+            </tr>
+            <tr>
+                <td>Preparar infirme de ventas</td>
+                <td>Alta</td>
+                <td>Comenzada</td>
+                <td>12/08/2014</td>
+                <td></td>
+            </tr>
+        </table>
+    </main>
+</body>
+</html>
