@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Uso de calc - Ejemplo 1</title>
+	<style type="text/css">
+		#contenedor {
+			position:relative;
+			width: 500px;
+			height:500px;
+			border: 1px solid black;
+		}
+		#caja {
+			width: 100px;
+			height: 100px;
+			background-color:red;
+		}
+		.centrada {
+			position:absolute;
+			left:calc(50% - 50px);
+			top:calc(50% - 50px);
+		}
+	</style>
+</head>
+<body>
+	<div id="contenedor">
+		<div id="caja" class="centrada"></div>
+	</div>
+</body>
+</html>

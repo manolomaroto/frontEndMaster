@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 01</title>
+    <style>
+        article{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: -50px;
+            margin-top: -50px;
+            height: 100px;
+            width: 100px;
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <head>
+            <h1>Centrando un elemento</h1>
+        </head>
+        <section>
+            <p>
+                ¿Cómo centrarías un elemento de dimensiones fijas y conocidas exactamente en el centro de la página (con su centro en el centro de la página) usando posicionamiento absoluto y que funcione en navegadores antiguos sin soporte para CSS3? (Pista: No te sirve usar simplemente un left:50% y un top:50% porque eso centraría su esquina superior izquierda pero no el objeto entero. Tampoco puedes usar "calc" porque solo está soportado en CSS3 y navegadores relativamente modernos).
+            </p>
+            <h2>Respuesta</h2>
+            <p>
+                Añadimos un margin-left y un margin-top negativos, que sean la mitad del ancho y el alto del elemento respectivamente
+            </p>
+        </section>
+        <section>
+            <article>
+                
+            </article>
+        </section>
+    </main>
+</body>
+</html>

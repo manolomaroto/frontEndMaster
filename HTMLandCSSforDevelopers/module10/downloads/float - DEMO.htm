@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Float cajas</title>
+	<style type="text/css">
+		.caja {
+			width:150px;
+			height:150px;
+			border-radius:15px;
+			margin: 5px;
+		}
+		
+		.roja {
+			background-color: red;
+		}
+		.azul {
+			background-color: blue;
+		}
+		.negra {
+			background-color: black;
+		}
+		.verde {
+			background-color: green;
+		}
+		.naranja {
+			background-color: orange;
+		}
+		
+		.flotada {
+			float:left;
+		}
+		
+		.despejado {
+			clear:both;
+		}
+		
+		#contenedor {
+			width:90%;
+			border: 1px dashed red;
+			background: silver;
+		}
+		
+		#contenedor:after {
+			content: "-";
+			height:0px;
+			visibility:hidden;
+			clear:both;
+			display:block;
+		}
+
+</style>
+</head>
+<body>
+<div id="contenedor">
+	<div class="caja roja flotada"></div>
+	<div class="caja azul flotada"></div>
+	<div class="caja negra flotada"></div>
+	<div class="caja verde flotada"></div>
+	<div class="caja naranja flotada"></div>
+</div>
+</body>
+</html>

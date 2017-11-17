@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Capas flotando</title>
+    <style>
+        .wrapper{
+            margin: 0 auto;
+            width: 800px;
+        }
+        .caja1, .caja2{
+            width: 300px;
+            height: 300px;
+            border: 1px solid #000;
+        }
+/*        La caja 1 al flotar se superpone a la 2 y esta no se ve*/
+        .caja1{
+            background-color: coral;
+            float: left;
+        }
+        .caja2{
+            background-color: darkseagreen;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="caja1"></div>
+        <div class="caja2"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+﻿*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+body {
+	margin:0px;
+	padding:0px;
+	background:silver;
+}
+
+#envoltorio {
+	width:85%;
+	min-width:600px;
+	background: white;
+	margin: 0 auto;
+}
+
+#cabecera {
+	background: blue;
+	color:white;
+	height: 40px;
+	padding-left: 20px;
+}
+
+#parteCentral {
+	overflow:hidden;
+}
+
+#lateral {
+	width:20%;
+	background:red;
+	float:left;
+	padding-bottom: 100%;
+	margin-bottom: -100%;
+}
+
+#lateral a {
+	display:block;
+	margin: 0px 0px 5px 0px;
+	padding: 10px;
+}
+
+#contenido {
+	background:yellow;
+	width:80%;
+	float:right;
+	padding:10px;
+	padding-bottom: 100%;
+	margin-bottom: -100%;
+}
+
+#pie {
+	background: orange;
+	width:100%;
+	clear:both;
+	padding:10px;
+}

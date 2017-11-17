@@ -1,0 +1,49 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+ }
+ 
+body {
+	margin: 0px;
+	padding: 0px;
+	background:silver;
+}
+
+#envoltorio {
+	width: 850px;
+	margin: 0 auto;
+}
+
+#cabecera {
+	height: 40px;
+	padding-left: 20px;
+	background: blue;
+	color:white;
+}
+
+#lateral {
+	width: 250px;
+	background: white;
+	float:left;
+}
+
+#lateral a {
+	display:block;
+	margin: 0px 0px 5px; 0px;
+	padding: 15px;
+}
+
+#contenido {
+	width: 600px;
+	background: yellow;
+	padding:15px;
+	float:right;
+}
+
+#pie {
+	background:orange;
+	clear:both;
+	width:100%;
+	padding:10px;
+}

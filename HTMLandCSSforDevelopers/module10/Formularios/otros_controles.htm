@@ -1,0 +1,94 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Controles input</title>
+	<style type="text/css">
+		div {
+			border: 1px dashed black;
+			margin:10px;
+			padding:20px;
+			float:left;
+			text-align:center;
+			min-height:80px;
+		}
+		div span {
+			display:block;
+			color:gray;
+			font: 14px 'Courier';
+			margin-bottom:20px;
+		}
+	</style>
+</head>
+<body>
+
+<div>
+	<span>
+<pre style="text-align:left;">
+&lt;textarea style=&quot;width:300px;height:200px;&quot;&gt;
+Texto inicial.
+Otra línea.
+&lt;/textarea&gt;
+</pre>
+	</span>
+	<textarea style="width:300px;height:200px;">
+Texto inicial.
+Otra línea.
+	</textarea>
+</div>
+
+<div>
+	<span>
+<pre style="text-align:left;">
+&lt;select name=&quot;cursos&quot;&gt;
+	&lt;option value=&quot;HTML&quot;&gt;HTML y CSS&lt;/option&gt;
+	&lt;option value=&quot;JavaScript&quot;&gt;JavaScript&lt;/option&gt;
+	&lt;option value=&quot;ASPNET&quot;&gt;ASP.NET&lt;/option&gt;
+&lt;/select&gt;
+</pre>
+	</span>
+	<select name="cursos">
+		<option value="HTML">HTML y CSS</option>
+		<option value="JavaScript">JavaScript</option>
+		<option value="ASPNET">ASP.NET</option>
+	</select>
+</div>
+
+<div>
+	<span>
+<pre style="text-align:left;">
+&lt;select name=&quot;cursos&quot; size=&quot;7&quot; multiple=&quot;multiple&quot;&gt;
+	&lt;option value=&quot;HTML&quot;&gt;HTML y CSS&lt;/option&gt;
+	&lt;option value=&quot;JavaScript&quot;&gt;JavaScript&lt;/option&gt;
+	&lt;option value=&quot;ASPNET&quot;&gt;ASP.NET&lt;/option&gt;
+&lt;/select&gt;
+</pre>
+	</span>
+	<select name="cursos" size="7" multiple="multiple">
+		<option value="HTML">HTML y CSS</option>
+		<option value="JavaScript">JavaScript</option>
+		<option value="ASPNET">ASP.NET</option>
+	</select>
+</div>
+
+<div>
+	<span>
+<pre style="text-align:left;">
+Buscar un curso: &lt;input type=&quot;text&quot; list=&quot;cursos&quot;/&gt;
+&lt;datalist id=&quot;cursos&quot;&gt;
+	&lt;option label=&quot;Online&quot; value=&quot;HTML y CSS&quot;/&gt;
+	&lt;option label=&quot;Libro&quot; value=&quot;JavaScript&quot;/&gt;
+	&lt;option label=&quot;Online&quot; value=&quot;ASP.NET MVC 4&quot;/&gt;
+&lt;/datalist&gt;
+</pre>
+	</span>
+	Buscar un curso: <input type="text" list="cursos">
+	<datalist id="cursos">
+		<option label="Online" value="HTML y CSS"/>
+		<option label="Libro" value="JavaScript"/>
+		<option label="Online" value="ASP.NET MVC 4"/>
+	</select>
+</div>
+
+</body>
+</html>
