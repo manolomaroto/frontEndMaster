@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es_ES">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <style>
+    body{
+      font-family: "Arial", "Helvética", "sans-serif";
+      text-align: center;
+    }
+    .wrapper{
+      width: 90%;
+      margin: 0 auto;
+    }
+    .row{
+      background-color: rgb(237, 172, 172);
+      margin-top: 10px;
+      padding: 10px 0 10px 10px;
+      border-top: 1px solid rgb(166, 70, 70);
+
+    }
+    .boton{
+      padding: 5px;
+      background-color: rgb(244, 217, 217);
+      border: 1px solid rgb(238, 79, 79);
+      border-radius: 5px;
+      color: rgb(238, 79, 79);
+    }
+
+    label{
+      color: rgb(238, 79, 79);
+    }
+
+    .boton:hover{
+      background-color: rgb(249, 72, 72);
+      color: #fff;
+    }
+
+    .boton:active{
+      background-color: rgb(300, 30, 30);
+      color: #fff;
+    }
+
+    input[type=text]{
+      padding: 5px;
+      background-color: rgb(244, 217, 217);
+      border: 1px solid rgb(238, 79, 79);
+      border-radius: 5px;
+      color: rgb(238, 79, 79);
+    }
+  </style>
+  <title>Formularios</title>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <h1>Formularios</h1>
+    </header>
+    <section>
+      <form action="#" method="get" id="formulario01" name="formulario01">
+        <div class="row">
+          <label for="boton01"></label><input type="button" id="boton01" value="Púlsame" class="boton">
+        </div>
+        <div class="row">
+          <label for="nombre">Nombre</label> <input type="text" id="nombre">
+        </div>
+        <div class="row">
+          <input type="reset" value="Borrar" class="boton">
+        </div>
+        <div class="row">
+          <input type="submit" value="Enviar" class="boton">
+        </div>
+      </form>
+    </section>
+    <footer>
+
+    </footer>
+  </div>
+</body>
+</html>
