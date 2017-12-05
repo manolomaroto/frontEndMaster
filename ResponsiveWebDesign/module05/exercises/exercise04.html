@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/exercise02.css">
+    <title>Versiones de la imagen</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>Imagenes responsive</h1>
+        </header>
+        <section>
+<!--
+            <picture>
+                <source media="(min-width:900px)" srcset="images/rayo.jpeg" />
+                <source srcset="images/rayo-75.jpeg">
+                <img src="images/rayo-75.jpeg" alt="">
+            </picture>
+-->
+       <img srcset="images/rayo-75.jpeg 512w,
+                   images/rayo-50.jpeg 768w,
+                   images/rayo.jpeg 1024w" 
+                   src="images/rayo-75.jpeg" alt="">
+        </section>
+    </div>
+</body>
+</html>
